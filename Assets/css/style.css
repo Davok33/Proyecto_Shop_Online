@@ -1,225 +1,256 @@
-body{
-    margin: 0px;
-    padding: 0px;
-    height: 100vh;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
+body {
+  margin: 0px;
+  padding: 0px;
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 }
 @font-face {
-    font-family: Newspaper;
-    src: url(/Assets/fonts/NewspaperPersonalUseSemiExpandedRegular-7B0GB.ttf);
-  }
-  @font-face {
-    font-family: 'Suburbia';
-    src: url(/Assets/fonts/SuburbiaPersonalUse-vmEaA.ttf);
-  }
-  @font-face {
-    font-family: 'gloria Hallelujah';
-    src: url(/Assets/fonts/gloriahallelujah.ttf);
-  }
-
-header{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    border-bottom:12px dashed #1a1a1a;
-
+  font-family: "Newspaper";
+  src: url(/Assets/fonts/NewspaperPersonalUseSemiExpandedRegular-7B0GB.ttf);
+}
+@font-face {
+  font-family: "Suburbia";
+  src: url(/Assets/fonts/SuburbiaPersonalUse-vmEaA.ttf);
+}
+@font-face {
+  font-family: "gloria Hallelujah";
+  src: url(/Assets/fonts/gloriahallelujah.ttf);
 }
 
-.img-conv{
-   margin: 0px;
-   
-}
-#conv-l{
-    width: 200px;
-    height: 200px;
-   position: absolute;
-    top: 3em;
-    left: 3em;
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  border-bottom: 12px dashed #1a1a1a;
 }
 
-
-
-header nav{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    color:darkgoldenrod;
-    justify-content: flex-end;
-    background-image: url(/Assets/img/head_menu.png);
-    height: 170px;
-    
+.img-conv {
+  margin: 0px;
+}
+#conv-l {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 3em;
+  left: 3em;
 }
 
-header nav ul{
-    list-style:none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-end;
-    width: 50%;
-    font-family: 'Suburbia';
-   
-    color: white;
-
-}
-text{
-    font-size: 50px;
-    text-anchor: middle;
-    fill: black;
-    stroke: white;
-    stroke-width: 12px;
-    paint-order: stroke;
-    font-family: 'suburbia';
+header nav {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  color: darkgoldenrod;
+  justify-content: flex-end;
+  background-image: url(/Assets/img/head_menu.png);
+  height: 170px;
 }
 
+header nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 50%;
+  font-family: "Suburbia";
 
-#imagen-fondo1{
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
-    display: block;
+  color: white;
+}
+text {
+  font-size: 50px;
+  text-anchor: middle;
+  fill: black;
+  stroke: white;
+  stroke-width: 12px;
+  paint-order: stroke;
+  font-family: "suburbia";
 }
 
-.img_3es{
-    width: 100%;
-    height: 100%;
-    margin: 0px;
+#imagen-fondo1 {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  display: block;
 }
 
-.sep-prin{
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
-    border: 8px dashed black;
-    height: 140px;
-}
-.sep-prin img{
-    width: 100%;
-    height: 100%;
+.img_3es {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
 }
 
-.cordon1{
-    width: 100%;
-
+.sep-prin {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  border-bottom: 8px dashed black;
+  height: 140px;
 }
-/* .cordon1 img{
-    width: 100%;
-    height: auto;
-    display: block;
-    position: absolute;
-    top: 48em;
+.sep-prin img {
+  width: 100%;
+  height: 100%;
+}
+
+.cordon1 {
+  width: 100%;
+}
+
+
+.cordon1 img {
+  width: 100%;
+  height: auto;
+  display: flex;
+  position: relative;
+  bottom: 5em;
+}
+.logo-2 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+}
+.logo-2 img {
+  position: relative;
+  bottom: 100%;
+}
+
+/* p {
+  font-size: 20px;
+  color: black;
+  font-family: "Gloria Hallelujah";
 } */
 
-.cordon1 img{
-    width: 100%;
-    height: auto;
-    display: flex;
-    position: relative;
-    bottom:5em;
-}
-.logo-2{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    height: 50%;
-}
-.logo-2 img{
-    position: relative;
-    bottom: 100%;
+.titulo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ 
+  
 }
 
-p{
-    font-size: 20px;
-    color: black;
-    font-family: 'Gloria Hallelujah';
-    
-}
-/**{
-    margin-left: 20px;
-    box-sizing: border-box;
-} */
-
-main h1{
-    color: blue;
-   text-align: center;
+.articulo {
+  box-sizing: border-box;
+  overflow: auto;
+  width: 100%;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  text-align: center;
+  font-family: "gloria Hallelujah";
+  padding: 5%;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
 }
 
-.titulo{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.parra4{
+    padding: 5em;
+    margin: 0px;
+    border: 6px solid black;
 }
 
-.articulo{
-    background: rgb(53, 53, 54);
-    color: red;;
+main h1 {
+  font-size: 40px;
+  font-family: "gloria Hallelujah";
+  text-align: center;
+}
+
+main h2{
     text-align: center;
-    box-sizing: border-box;
-    overflow: scroll;
+    font-size: 30px;
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.s1,
+.s3,
+.s5 {
+  width: 100%;
+  height: auto;
+  border-top: 8px dashed black;
+  border-bottom: 8px dashed black;
+  margin: 0px;
+  padding: 0px;
+}
+
+.s2,
+.s4 {
+  height: 120px;
+}
+
+
+.tienda{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tienda p{
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ font-family:"Suburbia";
+    font-size: 120px;
+    width: 20%;
+    background-color: white;
+    color: rgb(231, 7, 7);
+    padding: 0px;
+    margin: 0px;
+}
+
+.pantalon{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(/Assets/img/img_vaquero.png);
+    background-size: cover;
+    height: 100%;
+    padding-bottom: 25em;
+}
+ .pantalon div img{                 
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
 } 
-/*.parrafo1{
-    height: 100px;
-    text-align: center;   
-} */
 
-main article h2{
-    color: blue;
-    font-size: 35px;
-    text-align: center;
-   
+.pantalon img{                  /* parche */
+    width: 50%;
+    height: auto;
+    margin-top: 3em;
 }
-
-/*.parrafo3{
-    margin-left: 100px;
-    height: 100px;
-    text-align: center;
-   
-}*/
-
-.contenedor{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-/* .imagenes{
-    width: 100%;
-    margin: -20px;
-} */
-
-.s1, .s2, .s3, .s4, .s5{
-    width: 100%;
-    border-top: 8px dashed black;
-    border-bottom: 8px dashed black;
-   
-}
-.s1, .s2, .s3, .s4, .s5:hover{
-    
-}
-
-
 
 /*Responsive*/
-@media only screen and (max-width:480px) {
-
-
-   h1{
-       color: red;
-   }
+@media only screen and (max-width: 480px) {
+  h1 {
+    color: red;
+  }
 }
 
-@media screen and (min-width:768px) {
-    .s1 .s2 .s3 .s4 .s5{
-        width: 380px;
-    }
+@media screen and (min-width: 768px) {
+  .s1 .s2 .s3 .s4 .s5 {
+    width: 380px;
+  }
 }
 
-@media screen and (min-width:1024px) {
+/* @media screen and (min-width:1024px) {
     .s1 .s2 .s3 .s4 .s5{
         width: 300px;
     }
-}
+} */
+
+
+
+
+
+
