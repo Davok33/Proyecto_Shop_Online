@@ -89,10 +89,12 @@ text{
     width: 100%;
     margin: 0px;
     padding: 0px;
+    border: 8px dashed black;
+    height: 140px;
 }
 .sep-prin img{
     width: 100%;
-    height: 130px;
+    height: 100%;
 }
 
 .cordon1{
@@ -123,4 +125,11 @@ text{
 .logo-2 img{
     position: relative;
     bottom: 100%;
+}
+
+p{
+    font-size: 20px;
+    color: black;
+    font-family: 'Gloria Hallelujah';
+    
 }
