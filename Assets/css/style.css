@@ -11,8 +11,12 @@ body{
     src: url(/Assets/fonts/NewspaperPersonalUseSemiExpandedRegular-7B0GB.ttf);
   }
   @font-face {
-    font-family: Suburbia;
+    font-family: 'Suburbia';
     src: url(/Assets/fonts/SuburbiaPersonalUse-vmEaA.ttf);
+  }
+  @font-face {
+    font-family: 'gloria Hallelujah';
+    src: url(/Assets/fonts/gloriahallelujah.ttf);
   }
 
 header{
