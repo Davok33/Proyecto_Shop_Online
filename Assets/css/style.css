@@ -5,6 +5,7 @@ body {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 @font-face {
   font-family: "Newspaper";
@@ -48,17 +49,6 @@ header nav {
   height: 170px;
 }
 
-header nav ul {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: flex-end;
-  width: 50%;
-  font-family: "Suburbia";
-
-  color: white;
-}
 text {
   font-size: 50px;
   text-anchor: middle;
@@ -98,7 +88,6 @@ text {
   width: 100%;
 }
 
-
 .cordon1 img {
   width: 100%;
   height: auto;
@@ -127,8 +116,6 @@ text {
   display: flex;
   flex-direction: column;
   justify-content: center;
- 
-  
 }
 
 .articulo {
@@ -144,13 +131,12 @@ text {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
-.parra4{
-    padding: 5em;
-    margin: 0px;
-    border: 6px solid black;
+.parra4 {
+  padding: 5em;
+  margin: 0px;
+  border: 6px solid black;
 }
 
 main h1 {
@@ -159,9 +145,9 @@ main h1 {
   text-align: center;
 }
 
-main h2{
-    text-align: center;
-    font-size: 30px;
+main h2 {
+  text-align: center;
+  font-size: 30px;
 }
 
 .contenedor {
@@ -188,101 +174,120 @@ main h2{
   height: 120px;
 }
 
+.tienda {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tienda p {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: "Suburbia";
+  font-size: 120px;
+  width: 20%;
+  background-color: white;
+  color: rgb(231, 7, 7);
+  padding: 0px;
+  margin: 0px;
+}
 
-.tienda{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.pantalon {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(/Assets/img/img_vaquero.png);
+  background-size: cover;
 }
-.tienda p{
- display: flex;
- flex-direction: row;
- justify-content: center;
- font-family:"Suburbia";
-    font-size: 120px;
-    width: 20%;
-    background-color: white;
-    color: rgb(231, 7, 7);
-    padding: 0px;
-    margin: 0px;
+.pantalon div img {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
 }
 
-.pantalon{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-image: url(/Assets/img/img_vaquero.png);
-    background-size: cover;
+.parche {
+  /* parche */
+  width: 54%;
+  background-image: url(/Assets/img/img_parche.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 530px;
+  margin-bottom: 12em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
- .pantalon div img{                 
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-} 
-
-.parche{                  /* parche */
-    width: 54%;
-    background-image: url(/Assets/img/img_parche.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 530px;
-    margin-bottom: 12em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.pantalon article p{
+.pantalon article p {
   font-size: 16px;
   color: rgb(0, 0, 0);
-  font-family: 'gloria Hallelujah';
+  font-family: "gloria Hallelujah";
 }
-.pantalon article{
+.pantalon article {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 6em;
   text-align: justify;
-  margin-left:1em;
+  margin-left: 1em;
 }
 
-
-.img-foot1{
+.img-foot1 {
   width: 100%;
   height: auto;
   border-top: 5px dashed black;
   margin: 0px;
   padding: 0px;
 }
-.img-foot1 img{
+.img-foot1 img {
   width: 100%;
   height: auto;
-
 }
 
-footer{
+footer {
   width: 100%;
   height: auto;
   margin: 0px;
   padding: 0px;
   border-top: 5px dashed black;
 }
-footer #img-1 img{
+footer #img-1 img {
   width: 100%;
   height: auto;
   margin: 0px;
   padding: 0px;
 }
-
-
-
-
 
 /*Responsive*/
 @media only screen and (max-width: 480px) {
-  h1 {
+  .titulo h1 {
     color: red;
+    font-size: 20px;
+  }
+  .logo-2 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+  }
+  .articulo {
+    box-sizing: border-box;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    font-size: 13px;
+    text-align: center;
+    font-family: "gloria Hallelujah";
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+  .cordon1 img {
+    bottom:1em;
+    position: relative;
   }
 }
 
@@ -297,9 +302,3 @@ footer #img-1 img{
         width: 300px;
     }
 } */
-
-
-
-
-
-
