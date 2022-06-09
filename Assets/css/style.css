@@ -214,8 +214,6 @@ main h2{
     align-items: center;
     background-image: url(/Assets/img/img_vaquero.png);
     background-size: cover;
-    height: 100%;
-    padding-bottom: 25em;
 }
  .pantalon div img{                 
     width: 100%;
@@ -224,11 +222,62 @@ main h2{
     flex-direction: column;
 } 
 
-.pantalon img{                  /* parche */
-    width: 50%;
-    height: auto;
-    margin-top: 3em;
+.parche{                  /* parche */
+    width: 54%;
+    background-image: url(/Assets/img/img_parche.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 530px;
+    margin-bottom: 12em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+.pantalon article p{
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  font-family: 'gloria Hallelujah';
+}
+.pantalon article{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6em;
+  text-align: justify;
+  margin-left:1em;
+}
+
+
+.img-foot1{
+  width: 100%;
+  height: auto;
+  border-top: 5px dashed black;
+  margin: 0px;
+  padding: 0px;
+}
+.img-foot1 img{
+  width: 100%;
+  height: auto;
+
+}
+
+footer{
+  width: 100%;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+  border-top: 5px dashed black;
+}
+footer #img-1 img{
+  width: 100%;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+}
+
+
+
+
 
 /*Responsive*/
 @media only screen and (max-width: 480px) {
