@@ -209,11 +209,7 @@ main h2 {
   margin-left: 200px;
   margin-right: 200px;
   display: flex;
-}
-
-.column img {
-  width: 1000px;
-  height: 600px;
+  position: relative;
 }
 
 .tienda {
