@@ -203,8 +203,8 @@ main h2 {
 
 .box {
   background: white;
-  height: 300px;
-  width: 1000px;
+  height: 702px;
+  width: 1478px;
   margin-top: 200px;
   margin-left: 200px;
   margin-right: 200px;
@@ -309,6 +309,11 @@ footer #img-1 img {
     width: 380px;
   }
 }
+/* @media screen and (min-width: 768px) {
+  .lh {
+    width: 380px;
+  }
+} */
 
 /* @media screen and (min-width:1024px) {
     .s1 .s2 .s3 .s4 .s5{
