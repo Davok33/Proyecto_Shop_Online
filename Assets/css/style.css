@@ -171,6 +171,37 @@ main h2 {
   height: 120px;
 }
 
+<<<<<<< Updated upstream
+=======
+.contenedor_hombre {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  height: 50%;
+  align-items: center;
+}
+
+.box input {
+  position: relative;
+  width: 1px;
+  height: 5px;
+}
+
+.box {
+  background: white;
+  height: 702px;
+  width: 1478px;
+  margin-top: 200px;
+  margin-left: 200px;
+  margin-right: 200px;
+  display: flex;
+  position: relative;
+}
+
+>>>>>>> Stashed changes
 .tienda {
   display: flex;
   flex-direction: column;
