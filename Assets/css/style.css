@@ -106,12 +106,6 @@ text {
   bottom: 100%;
 }
 
-/* p {
-  font-size: 20px;
-  color: black;
-  font-family: "Gloria Hallelujah";
-} */
-
 .titulo {
   display: flex;
   flex-direction: column;
@@ -210,20 +204,17 @@ main h2 {
 }
 
 .parche {
-  /* parche */
   margin-bottom: 12em;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content:center;
-  
+  justify-content: center;
 }
-.parche img{
-width: 70%;
-display: flex;
-flex-direction: column;
-align-items: center;
-
+.parche img {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .pantalon article p {
   font-size: 16px;
@@ -238,7 +229,7 @@ align-items: center;
   margin: 3em;
   padding: 18em;
   position: relative;
-  bottom:  55em;
+  bottom: 55em;
 }
 
 .img-foot1 {
@@ -290,9 +281,8 @@ footer #img-1 img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
   }
-  #conv-l{
+  #conv-l {
     width: 100px;
     height: 100px;
     left: 1em;
@@ -305,10 +295,11 @@ footer #img-1 img {
   }
 
   .cordon1 img {
-    bottom:1em;
+    bottom: 1em;
     position: relative;
   }
-  .s2, .s4{
+  .s2,
+  .s4 {
     height: 50px;
   }
   .pantalon article p {
@@ -325,7 +316,7 @@ footer #img-1 img {
     padding: 4em;
     height: 30px;
     position: relative;
-    bottom:  26em;
+    bottom: 26em;
     overflow: scroll;
   }
   .pantalon {
@@ -337,7 +328,7 @@ footer #img-1 img {
     background-size: cover;
     height: 500px;
   }
-  .cintu img{
+  .cintu img {
     margin-bottom: 5em;
   }
 }
@@ -347,9 +338,3 @@ footer #img-1 img {
     width: 380px;
   }
 }
-
-/* @media screen and (min-width:1024px) {
-    .s1 .s2 .s3 .s4 .s5{
-        width: 300px;
-    }
-} */
