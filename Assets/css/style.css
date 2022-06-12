@@ -194,30 +194,36 @@ main h2 {
 
 .pantalon {
   width: 100%;
+  height: 1300px;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-image: url(/Assets/img/img_vaquero.png);
   background-size: cover;
 }
-.pantalon div img {
+.cintu img {
   width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
+  margin-bottom: 10em;
 }
 
 .parche {
   /* parche */
-  width: 54%;
-  background-image: url(/Assets/img/img_parche.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 530px;
   margin-bottom: 12em;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content:center;
+  
+}
+.parche img{
+width: 70%;
+display: flex;
+flex-direction: column;
+align-items: center;
+
 }
 .pantalon article p {
   font-size: 16px;
@@ -228,9 +234,11 @@ main h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 6em;
   text-align: justify;
-  margin-left: 1em;
+  margin: 3em;
+  padding: 18em;
+  position: relative;
+  bottom:  55em;
 }
 
 .img-foot1 {
@@ -284,10 +292,53 @@ footer #img-1 img {
     align-items: center;
     
   }
+  #conv-l{
+    width: 100px;
+    height: 100px;
+    left: 1em;
+    top: 1em;
+  }
+  .parra4 {
+    padding: 1em;
+    margin: 0px;
+    border: 6px solid black;
+  }
 
   .cordon1 img {
     bottom:1em;
     position: relative;
+  }
+  .s2, .s4{
+    height: 50px;
+  }
+  .pantalon article p {
+    font-size: 12px;
+    color: rgb(0, 0, 0);
+    font-family: "gloria Hallelujah";
+  }
+  .pantalon article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    margin: 3em;
+    padding: 4em;
+    height: 30px;
+    position: relative;
+    bottom:  26em;
+    overflow: scroll;
+  }
+  .pantalon {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(/Assets/img/img_vaquero.png);
+    background-size: cover;
+    height: 500px;
+  }
+  .cintu img{
+    margin-bottom: 5em;
   }
 }
 
