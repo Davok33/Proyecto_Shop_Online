@@ -27,6 +27,9 @@ header {
   justify-content: flex-end;
   border-bottom: 12px dashed #1a1a1a;
 }
+header nav svg text:hover{
+  cursor: pointer;
+}
 
 .img-conv {
   margin: 0px;
