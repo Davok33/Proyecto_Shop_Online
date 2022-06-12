@@ -5,6 +5,7 @@ body {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 @font-face {
   font-family: "Newspaper";
@@ -48,17 +49,6 @@ header nav {
   height: 170px;
 }
 
-header nav ul {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: flex-end;
-  width: 50%;
-  font-family: "Suburbia";
-
-  color: white;
-}
 text {
   font-size: 50px;
   text-anchor: middle;
@@ -184,34 +174,6 @@ main h2 {
   height: 120px;
 }
 
-.contenedor_hombre {
-  margin-top: 3%;
-  margin-bottom: 3%;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  flex-direction: row;
-  height: 50%;
-  align-items: center;
-}
-
-.box input {
-  position: relative;
-  width: 1px;
-  height: 5px;
-}
-
-.box {
-  background: white;
-  height: 300px;
-  width: 1000px;
-  margin-top: 200px;
-  margin-left: 200px;
-  margin-right: 200px;
-  display: flex;
-  position: relative;
-}
-
 .tienda {
   display: flex;
   flex-direction: column;
@@ -232,27 +194,31 @@ main h2 {
 
 .pantalon {
   width: 100%;
+  height: 1300px;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-image: url(/Assets/img/img_vaquero.png);
   background-size: cover;
 }
-.pantalon div img {
+.cintu img {
   width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
+  margin-bottom: 10em;
 }
 
 .parche {
   /* parche */
-  width: 54%;
-  background-image: url(/Assets/img/img_parche.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 530px;
   margin-bottom: 12em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.parche img {
+  width: 70%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -266,9 +232,11 @@ main h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 6em;
   text-align: justify;
-  margin-left: 1em;
+  margin: 3em;
+  padding: 18em;
+  position: relative;
+  bottom: 55em;
 }
 
 .img-foot1 {
@@ -299,8 +267,76 @@ footer #img-1 img {
 
 /*Responsive*/
 @media only screen and (max-width: 480px) {
-  h1 {
+  .titulo h1 {
     color: red;
+    font-size: 20px;
+  }
+  .logo-2 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+  }
+  .articulo {
+    box-sizing: border-box;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    font-size: 13px;
+    text-align: center;
+    font-family: "gloria Hallelujah";
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #conv-l {
+    width: 100px;
+    height: 100px;
+    left: 1em;
+    top: 1em;
+  }
+  .parra4 {
+    padding: 1em;
+    margin: 0px;
+    border: 6px solid black;
+  }
+
+  .cordon1 img {
+    bottom: 1em;
+    position: relative;
+  }
+  .s2,
+  .s4 {
+    height: 50px;
+  }
+  .pantalon article p {
+    font-size: 12px;
+    color: rgb(0, 0, 0);
+    font-family: "gloria Hallelujah";
+  }
+  .pantalon article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    margin: 3em;
+    padding: 4em;
+    height: 30px;
+    position: relative;
+    bottom: 26em;
+    overflow: scroll;
+  }
+  .pantalon {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(/Assets/img/img_vaquero.png);
+    background-size: cover;
+    height: 500px;
+  }
+  .cintu img {
+    margin-bottom: 5em;
   }
 }
 
@@ -309,9 +345,3 @@ footer #img-1 img {
     width: 380px;
   }
 }
-
-/* @media screen and (min-width:1024px) {
-    .s1 .s2 .s3 .s4 .s5{
-        width: 300px;
-    }
-} */
