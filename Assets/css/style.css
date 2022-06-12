@@ -195,23 +195,6 @@ main h2 {
   align-items: center;
 }
 
-.box input {
-  position: relative;
-  width: 1px;
-  height: 5px;
-}
-
-.box {
-  background: white;
-  height: 702px;
-  width: 1478px;
-  margin-top: 200px;
-  margin-left: 200px;
-  margin-right: 200px;
-  display: flex;
-  position: relative;
-}
-
 .tienda {
   display: flex;
   flex-direction: column;
