@@ -27,7 +27,7 @@ header {
   justify-content: flex-end;
   border-bottom: 12px dashed #1a1a1a;
 }
-header nav svg text:hover{
+header nav svg text:hover {
   cursor: pointer;
 }
 
@@ -171,8 +171,6 @@ main h2 {
   height: 120px;
 }
 
-<<<<<<< Updated upstream
-=======
 .contenedor_hombre {
   margin-top: 3%;
   margin-bottom: 3%;
@@ -201,7 +199,6 @@ main h2 {
   position: relative;
 }
 
->>>>>>> Stashed changes
 .tienda {
   display: flex;
   flex-direction: column;
