@@ -95,14 +95,20 @@ text {
 .cajaimg{
   background: white;
   position: relative;
-  left: 12.5%;
-  bottom: 80%;
-  width: 75%;
-  height: 70%;
+  left: 12%;
+  width: 70%;
+  bottom: 50%;
+  height: 300px;
   overflow: scroll;
   display: flex;
-  flex-direction: column;
-  
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 2em;
+  -ms-overflow-style: none;
+}
+.cajaimg img{
+  width: 200px;
 }
 /*footerAmaia*/
 
