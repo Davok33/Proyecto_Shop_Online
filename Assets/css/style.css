@@ -195,23 +195,6 @@ main h2 {
   align-items: center;
 }
 
-.box input {
-  position: relative;
-  width: 1px;
-  height: 5px;
-}
-
-.box {
-  background: white;
-  height: 300px;
-  width: 1000px;
-  margin-top: 200px;
-  margin-left: 200px;
-  margin-right: 200px;
-  display: flex;
-  position: relative;
-}
-
 .tienda {
   display: flex;
   flex-direction: column;
@@ -309,6 +292,11 @@ footer #img-1 img {
     width: 380px;
   }
 }
+/* @media screen and (min-width: 768px) {
+  .lh {
+    width: 380px;
+  }
+} */
 
 /* @media screen and (min-width:1024px) {
     .s1 .s2 .s3 .s4 .s5{
