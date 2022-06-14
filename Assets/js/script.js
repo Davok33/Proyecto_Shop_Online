@@ -15,17 +15,19 @@ function filtrado(genero){
 let filtradd = filtrado(ropaParams);
 console.log(filtradd);
 
-function ropahmn (articulo, imagen){
+function ropahmn (articulo, imagen,){
     let ropa1= '<div class="ropa">';
-    ropa1 +=`<img src='${imagen}'><br>`; 
+    ropa1 +=`<img src='${imagen}'><br>`;
+   /*  ropa1 += `<span> Género: ${genero} </span><br>`;  */
     ropa1 += `<span> Articulo: ${articulo} </span><br>`; 
     ropa1 += '</div>';
     return ropa1;
 }
 let ropa_hmn = "";
 
-for (let i=0; i<filtradd; i++){ 
+for (let i=0; i < filtradd.length; i++){ 
     let imagen1 = filtradd[i].imagen; 
+    /* let genero1 = filtradd [i].genero; */
     let articulo1 = filtradd[i].articulo;
     ropa_hmn += ropahmn (articulo1, imagen1)
 }
