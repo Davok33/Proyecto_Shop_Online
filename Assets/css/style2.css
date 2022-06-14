@@ -99,13 +99,13 @@ text {
   width: 70%;
   bottom: 50%;
   height: 300px;
-  overflow: scroll;
+  overflow: auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 2em;
-  -ms-overflow-style: none;
+ 
 }
 .cajaimg img{
   width: 200px;

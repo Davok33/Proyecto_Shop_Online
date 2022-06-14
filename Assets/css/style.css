@@ -274,6 +274,7 @@ footer #img-1 img {
 
 /*Responsive*/
 @media only screen and (max-width: 480px) {
+  
   .titulo h1 {
     color: red;
     font-size: 20px;
