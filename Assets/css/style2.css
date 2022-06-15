@@ -135,8 +135,3 @@ footer {
     }
   }
   
-  @media screen and (min-width: 768px) {
-    .s1 .s2 .s3 .s4 .s5 {
-      width: 380px;
-    }
-  }

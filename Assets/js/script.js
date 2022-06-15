@@ -12,11 +12,11 @@ function filtrado(genero){
     return filtbd;
 
 }
-let filtradd = filtrado(ropaParams);
-console.log(filtradd);
+let filtramujer = filtrado(ropaParams);
+console.log(filtramujer);
 
-function ropahmn (articulo, imagen,){
-    let ropa1= '<div class="ropa">';
+function ropahmn (articulo, imagen,){      //
+    let ropa1 = '<div class="ropa">';
     ropa1 +=`<img src='${imagen}'><br>`;
    /*  ropa1 += `<span> Género: ${genero} </span><br>`;  */
     ropa1 += `<span> Articulo: ${articulo} </span><br>`; 
@@ -25,10 +25,10 @@ function ropahmn (articulo, imagen,){
 }
 let ropa_hmn = "";
 
-for (let i=0; i < filtradd.length; i++){ 
-    let imagen1 = filtradd[i].imagen; 
+for (let i = 0; i < filtramujer.length; i++){ 
+    let imagen1 = filtramujer[i].imagen; 
     /* let genero1 = filtradd [i].genero; */
-    let articulo1 = filtradd[i].articulo;
+    let articulo1 = filtramujer[i].articulo;
     ropa_hmn += ropahmn (articulo1, imagen1)
 }
 document.querySelector('.cajaimg').innerHTML = ropa_hmn
