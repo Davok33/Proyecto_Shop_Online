@@ -68,31 +68,31 @@ body {
     paint-order: stroke;
     font-family: "suburbia";
   }
-
-  .content_ninos img{
-    width: 40%;
-    height: auto;
-    margin: 15px 0 15px 0;
+  
+  .contenedor_hombre img{
+      width: 40%;
+      height: auto;
+      margin: 20px 0 15px 0;
   }
-  .content_ninos{
+  .contenedor_hombre{
     flex-direction: column;
     display: flex;
     align-items: center;
   }
-  .idArNinos{
+  .idArmario2{
     position: relative;
     z-index: 20;
   }
-  .armarioNinos{
-    display: grid;
-    width: 85%;
-    margin: auto;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    border-radius: 3px;
-    position: relative;
+  .armarioHombre {
+      display: grid;
+      width: 85%;
+      margin: auto;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      border-radius: 3px;
+      position: relative;
   }
-  .caja_imagenes2{
+  .cajaimg{
     background: white;
     position: relative;
     left: 12%;
@@ -107,19 +107,9 @@ body {
     padding: 2em;
    
   }
-  .caja_imagenes2 img{
+  .cajaimg img{
     width: 200px;
   }
- /*  .caja_imagenes2{
-   background: white; 
-   position: relative;
-   left: 12.5%;
-   bottom: 80%;
-   width: 75%;
-   height: 70%;
-  } */
-  
-
   /*footerAmaia*/
   
   
@@ -142,11 +132,5 @@ body {
     @media only screen and (max-width: 480px) {
       h1 {
         color: red;
-      }
-    }
-    
-    @media screen and (min-width: 768px) {
-      .s1 .s2 .s3 .s4 .s5 {
-        width: 380px;
       }
     }
