@@ -24,7 +24,6 @@ header {
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
   border-bottom: 12px dashed #1a1a1a;
 }
 header nav svg text:hover {
@@ -46,13 +45,21 @@ header nav {
   display: flex;
   flex-direction: row;
   width: 100%;
-  color: darkgoldenrod;
-  justify-content: flex-end;
   background-image: url(/Assets/img/head_menu.png);
   height: 170px;
 }
+nav svg{
+width: 50%;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
 
 text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   font-size: 50px;
   text-anchor: middle;
   fill: black;
