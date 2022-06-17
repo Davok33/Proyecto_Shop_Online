@@ -69,6 +69,105 @@ text {
   font-family: "suburbia";
 }
 
+/*Página Mujer*/
+
+.contenedor_mujer img{
+  width: 40%;
+  height: auto;
+  margin: 20px 0 15px 0;
+}
+.contenedor_mujer{
+flex-direction: column;
+display: flex;
+align-items: center;
+}
+.idArmario{
+position: relative;
+z-index: 20;
+}
+.armarioMujer {
+  display: grid;
+  width: 85%;
+  margin: auto;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border-radius: 3px;
+  position: relative;
+}
+
+/*Página Hombre*/
+
+.contenedor_hombre img{
+  width: 50%;
+  height: auto;
+  margin: 20px 0 15px 0;
+  align-items: center;
+}
+.contenedor_hombre{
+flex-direction: column;
+display: flex;
+align-items: center;
+}
+.idArmario2{
+position: relative;
+z-index: 20;
+}
+.armarioHombre {
+  display: grid;
+  width: 85%;
+  margin: auto;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border-radius: 3px;
+  position: relative;
+}
+
+/*Página niños*/
+
+.content_ninos img{
+  width: 40%;
+  height: auto;
+  margin: 20px 0 15px 0;
+}
+.content_ninos{
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+.idArNinos{
+  position: relative;
+  z-index: 20;
+}
+.armarioNinos{
+  display: grid;
+  width: 85%;
+  margin: auto;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border-radius: 3px;
+  position: relative;
+}
+
+.cajaimg{
+background: white;
+position: relative;
+left: 12%;
+width: 70%;
+bottom: 50%;
+height: 200px;
+overflow: auto;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-around;
+padding: 2em;
+
+}
+.cajaimg img{
+width: 200px;
+}
+
+
 #imagen-fondo1 {
   width: 100%;
   margin: 0px;

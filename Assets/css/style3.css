@@ -92,7 +92,7 @@ body {
     border-radius: 3px;
     position: relative;
   }
-  .caja_imagenes2{
+  .cajaimg{
     background: white;
     position: relative;
     left: 12%;
@@ -107,7 +107,7 @@ body {
     padding: 2em;
    
   }
-  .caja_imagenes2 img{
+  .cajaimg img{
     width: 200px;
   }
  /*  .caja_imagenes2{

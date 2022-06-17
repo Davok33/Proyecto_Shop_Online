@@ -70,14 +70,14 @@ body {
   }
   
   .contenedor_hombre img{
-      width: 40%;
+      width: 60%;
       height: auto;
       margin: 20px 0 15px 0;
   }
   .contenedor_hombre{
     flex-direction: column;
     display: flex;
-    align-items: center;
+    
   }
   .idArmario2{
     position: relative;
