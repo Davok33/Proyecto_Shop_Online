@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0px;
   padding: 0px;
@@ -7,6 +10,7 @@ body {
   flex-direction: column;
   width: 100%;
 }
+
 @font-face {
   font-family: "Newspaper";
   src: url(/Assets/fonts/NewspaperPersonalUseSemiExpandedRegular-7B0GB.ttf);
@@ -19,17 +23,35 @@ body {
   font-family: "gloria Hallelujah";
   src: url(/Assets/fonts/gloriahallelujah.ttf);
 }
+@font-face {
+  font-family: 'Bee Ridge Vintage';
+  src: url(/Assets/fonts/BeeRidgeVintageBold.ttf);
+}
 
 header {
   width: 100%;
   display: flex;
   flex-direction: row;
-  border-bottom: 12px dashed #1a1a1a;
+  background-image: url(/Assets/img/head_menu.png);
+  height: 270px;
 }
-header nav svg text:hover {
+header label{
+  position: absolute;
+  margin: 0px;
+  top: 1em;
+}
+header label:hover {
   cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.315);
 }
 
+#btn-check{
+  display: none;
+}
+
+#img-burger{
+  display: none;
+}
 .img-conv {
   margin: 0px;
 }
@@ -41,42 +63,49 @@ header nav svg text:hover {
   left: 3em;
 }
 
-header nav {
+.barra-nav {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 150px;
+  border-bottom: 12px dashed #ffffff;
+}
+.barra-nav ul{
+  width: 55%;
+  list-style: none;
   display: flex;
   flex-direction: row;
-  width: 100%;
-  background-image: url(/Assets/img/head_menu.png);
-  height: 170px;
-}
-nav svg{
-width: 50%;
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
+  justify-content: space-evenly;
+  align-items: flex-end;
 }
 
-text {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  font-size: 50px;
-  text-anchor: middle;
-  fill: black;
-  stroke: white;
-  stroke-width: 12px;
-  paint-order: stroke;
-  font-family: "suburbia";
+.barra-nav ul li{
+  align-self: center;
+  text-align: center;
+  font-size: 45px;
+  font-family:'Bee Ridge Vintage' ;
+  height: 40px;
+  width: 200px;
+   -webkit-text-stroke:1.3px rgb(177, 177, 177);
+  -webkit-text-fill-color:rgb(238, 238, 238); 
+}
+.barra-nav ul li:hover{
+    cursor: pointer;
+}
+a{
+  text-decoration: none;
+  -webkit-text-stroke:1.3px rgb(177, 177, 177);
+  -webkit-text-fill-color:rgb(238, 238, 238); 
 }
 
 /*Página Mujer*/
 
-.contenedor_mujer img{
+.contenedor-mujer img{
   width: 40%;
   height: auto;
   margin: 20px 0 15px 0;
 }
-.contenedor_mujer{
+.contenedor-mujer{
 flex-direction: column;
 display: flex;
 align-items: center;
@@ -97,16 +126,20 @@ z-index: 20;
 
 /*Página Hombre*/
 
-.contenedor_hombre img{
-  width: 50%;
-  height: auto;
-  margin: 20px 0 15px 0;
-  align-items: center;
-}
-.contenedor_hombre{
+
+.contenedor-hombre{
 flex-direction: column;
 display: flex;
 align-items: center;
+width: 100%;
+padding: 2em;
+}
+.contLogo{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 50%;
+  height: auto;
 }
 .idArmario2{
 position: relative;
@@ -154,7 +187,7 @@ position: relative;
 left: 12%;
 width: 70%;
 bottom: 50%;
-height: 200px;
+height: 300px;
 overflow: auto;
 display: flex;
 flex-direction: row;
@@ -221,7 +254,7 @@ width: 200px;
   justify-content: center;
 }
 
-.articulo {
+#articulo {
   box-sizing: border-box;
   overflow: auto;
   width: 100%;
@@ -385,13 +418,14 @@ footer #img-1 img {
     color: red;
     font-size: 20px;
   }
+
   .logo-2 {
     width: 50%;
     display: flex;
     flex-direction: column;
     height: 100px;
   }
-  .articulo {
+  #articulo {
     box-sizing: border-box;
     width: 100%;
     color: rgb(0, 0, 0);
@@ -453,20 +487,39 @@ footer #img-1 img {
     margin-bottom: 5em;
   }
 }
+@media screen and (max-width:768px) {
 
+  header{
+    width: 100%;
+   background-size: cover;
+    height: 100px;
+  }
+  #img-burger{
+    display: flex;
+    position: relative;
+    left:19em;
+   /*  position: absolute; */
+   
+  }
+    .barra-nav{
+    height: 140px;
+    display: flex;
+    }
+    .barra-nav ul{
+      display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1em;
+    
+    }
+    #btn_menu:checked ~ .barra-nav ul {
+      display: flex;
+    }
+}
 @media screen and (min-width: 768px) {
   .s1 .s2 .s3 .s4 .s5 {
     width: 380px;
   }
 }
-/* @media screen and (min-width: 768px) {
-  .lh {
-    width: 380px;
-  }
-} */
 
-/* @media screen and (min-width:1024px) {
-    .s1 .s2 .s3 .s4 .s5{
-        width: 300px;
-    }
-} */
