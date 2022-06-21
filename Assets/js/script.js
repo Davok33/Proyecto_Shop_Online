@@ -7,19 +7,18 @@ var url = new URL(window.location);
 var params = new URLSearchParams(url.search);
 let ropaParams = params.get("genero")
 
-function filtrado(genero){
+function filtro(genero){
     let filtbd = bdatos.filter(ropa => ropa.genero.includes(genero))
     return filtbd;
 
 }
-let filtramujer = filtrado(ropaParams);
+let filtramujer = filtro(ropaParams);
 console.log(filtramujer);
 
-function ropahmn (articulo, imagen, talla){      //
+function ropahmn (articulo, imagen, talla){      
     let ropa1 = '<div class="ropa">';
     ropa1 +=`<img src='${imagen}'><br>`;
     ropa1 += `<span> Talla: ${talla} </span><br>`;
-   /*  ropa1 += `<span> Género: ${genero} </span><br>`;  */
     ropa1 += `<span> Articulo: ${articulo} </span><br>`; 
     ropa1 += '</div>';
     return ropa1;

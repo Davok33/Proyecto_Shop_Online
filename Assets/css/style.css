@@ -11,6 +11,15 @@ body {
   width: 100%;
 }
 
+.ropa {
+  font-family: "gloria Hallelujah";
+  border: 2px dashed black;
+  padding: 4px;
+  margin: 4px;
+  background-color: rgba(215, 215, 215, 0.355);
+}
+
+
 @font-face {
   font-family: "Newspaper";
   src: url(/Assets/fonts/NewspaperPersonalUseSemiExpandedRegular-7B0GB.ttf);
@@ -24,7 +33,7 @@ body {
   src: url(/Assets/fonts/gloriahallelujah.ttf);
 }
 @font-face {
-  font-family: 'Bee Ridge Vintage';
+  font-family: "Bee Ridge Vintage";
   src: url(/Assets/fonts/BeeRidgeVintageBold.ttf);
 }
 
@@ -35,7 +44,7 @@ header {
   background-image: url(/Assets/img/head_menu.png);
   height: 270px;
 }
-header label{
+header label {
   position: absolute;
   margin: 0px;
   top: 1em;
@@ -45,11 +54,11 @@ header label:hover {
   background-color: rgba(0, 0, 0, 0.315);
 }
 
-#btn-check{
+#btn-check {
   display: none;
 }
 
-#img-burger{
+#img-burger {
   display: none;
 }
 .img-conv {
@@ -70,7 +79,7 @@ header label:hover {
   height: 150px;
   border-bottom: 12px dashed #ffffff;
 }
-.barra-nav ul{
+.barra-nav ul {
   width: 55%;
   list-style: none;
   display: flex;
@@ -79,46 +88,46 @@ header label:hover {
   align-items: flex-end;
 }
 
-.barra-nav ul li{
+.barra-nav ul li {
   align-self: center;
   text-align: center;
   font-size: 45px;
-  font-family:'Bee Ridge Vintage' ;
+  font-family: "Bee Ridge Vintage";
   height: 40px;
   width: 200px;
-   -webkit-text-stroke:1.3px rgb(177, 177, 177);
-  -webkit-text-fill-color:rgb(238, 238, 238); 
+  -webkit-text-stroke: 1.3px rgb(177, 177, 177);
+  -webkit-text-fill-color: rgb(238, 238, 238);
 }
-.barra-nav ul li:hover{
-    cursor: pointer;
+.barra-nav ul li:hover {
+  cursor: pointer;
 }
-a{
+a {
   text-decoration: none;
-  -webkit-text-stroke:1.3px rgb(177, 177, 177);
-  -webkit-text-fill-color:rgb(238, 238, 238); 
+  -webkit-text-stroke: 1.3px rgb(177, 177, 177);
+  -webkit-text-fill-color: rgb(238, 238, 238);
 }
 
 /*Página Mujer*/
 
-.contenedor-mujer img{
+.contenedor-mujer img {
   width: 40%;
   height: auto;
   margin: 20px 0 15px 0;
 }
-.contenedor-mujer{
-flex-direction: column;
-display: flex;
-align-items: center;
+.contenedor-mujer {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
 }
-.idArmario{
-position: relative;
-z-index: 20;
+.idArmario {
+  position: relative;
+  z-index: 20;
 }
 .armarioMujer {
   display: grid;
   width: 85%;
   margin: auto;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
   border-radius: 3px;
   position: relative;
@@ -126,30 +135,34 @@ z-index: 20;
 
 /*Página Hombre*/
 
-
-.contenedor-hombre{
-flex-direction: column;
-display: flex;
-align-items: center;
-width: 100%;
-padding: 2em;
+.contenedor-hombre {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 2em;
 }
-.contLogo{
+.contenedor-hombre img {
+  width: 40%;
+  height: auto;
+  margin: 20px 0 15px 0;
+}
+.contLogo {
   display: flex;
   flex-direction: row;
   justify-content: center;
   width: 50%;
   height: auto;
 }
-.idArmario2{
-position: relative;
-z-index: 20;
+.idArmario2 {
+  position: relative;
+  z-index: 20;
 }
 .armarioHombre {
   display: grid;
   width: 85%;
   margin: auto;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
   border-radius: 3px;
   position: relative;
@@ -157,21 +170,21 @@ z-index: 20;
 
 /*Página niños*/
 
-.content_ninos img{
+.content_ninos img {
   width: 40%;
   height: auto;
   margin: 20px 0 15px 0;
 }
-.content_ninos{
+.content_ninos {
   flex-direction: column;
   display: flex;
   align-items: center;
 }
-.idArNinos{
+.idArNinos {
   position: relative;
   z-index: 20;
 }
-.armarioNinos{
+.armarioNinos {
   display: grid;
   width: 85%;
   margin: auto;
@@ -181,25 +194,24 @@ z-index: 20;
   position: relative;
 }
 
-.cajaimg{
-background: white;
-position: relative;
-left: 12%;
-width: 70%;
-bottom: 50%;
-height: 300px;
-overflow: auto;
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-justify-content: space-around;
-padding: 2em;
-
+.cajaimg {
+  background: white;
+  position: relative;
+  left: 12%;
+  width: 70%;
+  bottom: 50%;
+  height: 300px;
+  overflow: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 2em;
+  border: 6px dashed black;
 }
-.cajaimg img{
-width: 200px;
+.cajaimg img {
+  width: 200px;
 }
-
 
 #imagen-fondo1 {
   width: 100%;
@@ -310,23 +322,13 @@ main h2 {
   height: 120px;
 }
 
-.contenedor_hombre {
-  margin-top: 3%;
-  margin-bottom: 3%;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  flex-direction: row;
-  height: 50%;
-  align-items: center;
-}
-
 .tienda {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.tienda p {
+.tienda h1 {
+  letter-spacing: 7px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -334,7 +336,7 @@ main h2 {
   font-size: 120px;
   width: 20%;
   background-color: white;
-  color: rgb(231, 7, 7);
+  color: rgba(193, 18, 18, 0.858);
   padding: 0px;
   margin: 0px;
 }
@@ -413,7 +415,6 @@ footer #img-1 img {
 
 /*Responsive*/
 @media only screen and (max-width: 480px) {
-  
   .titulo h1 {
     color: red;
     font-size: 20px;
@@ -487,39 +488,47 @@ footer #img-1 img {
     margin-bottom: 5em;
   }
 }
-@media screen and (max-width:768px) {
-
-  header{
+@media screen and (max-width: 768px) {
+  header {
     width: 100%;
-   background-size: cover;
+    background-size: cover;
     height: 100px;
   }
-  #img-burger{
+  .cajaimg {
+    border: 2px solid black;
+    left: 6%;
+    width: 70%;
+    bottom: 40%;
+    height: 200px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+  }
+  #img-burger {
     display: flex;
     position: relative;
-    left:19em;
-   /*  position: absolute; */
-   
+    left: 19em;
   }
-    .barra-nav{
+  .barra-nav {
     height: 140px;
     display: flex;
-    }
-    .barra-nav ul{
-      display: none;
+  }
+  .barra-nav ul {
+    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     padding-top: 1em;
-    
-    }
-    #btn_menu:checked ~ .barra-nav ul {
-      display: flex;
-    }
+  }
+  #btn_menu:checked ~ .barra-nav ul {
+    display: flex;
+  }
 }
 @media screen and (min-width: 768px) {
   .s1 .s2 .s3 .s4 .s5 {
     width: 380px;
   }
 }
-
